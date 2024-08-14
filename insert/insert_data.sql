@@ -42,3 +42,17 @@ values ('eko@pzn.com', 'feedback eko', 'ini feedback eko'),
        ('rully@pzn.com', 'feedback rully', 'ini feedback rully'),
        ('tono@pzn.com', 'feedback tono', 'ini feedback tono'),
        ('tono@pzn.com', 'feedback tono', 'ini feedback tono');
+
+-- Menambahkan data ke tabel categories
+INSERT INTO categories (name) VALUES ('Pet Food'), ('Toys'), ('Accessories');
+
+-- Menambahkan data ke tabel products
+INSERT INTO products (name, price, quantity, id_category) 
+VALUES ('Dog Food', 15000, 50, 1), ('Cat Toy', 5000, 100, 2);
+
+-- Menambahkan data ke tabel customer
+INSERT INTO customer (name, email) VALUES ('John Doe', 'john@example.com'), ('Jane Doe', 'jane@example.com');
+
+-- Menambahkan data ke tabel guestbooks
+INSERT INTO guestbooks (email, title, content) 
+VALUES ('john@example.com', 'Great Service', 'I loved the service!'), ('jane@example.com', 'Feedback', 'Could improve the delivery time.');
